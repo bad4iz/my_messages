@@ -61,5 +61,5 @@ typings/
 .next
 
 # ide
-.vs-code
+.vscode
 .idea
