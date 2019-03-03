@@ -6,8 +6,8 @@ const webpack = require('webpack');
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: [
-      'webpack-hot-middleware/client',
-      './src/index.js'
+        'webpack-hot-middleware/client',
+        './src/index.js'
     ],
     devServer: {
         contentBase: path.join(__dirname, '/dist/'),
@@ -25,10 +25,10 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 include: [
-                    path.resolve(__dirname, "src"),
-                  ],
+                    path.resolve(__dirname, 'src')
+                ],
                 use: {
-                    loader: 'babel-loader',
+                    loader: 'babel-loader'
                 }
             },
             {
@@ -43,7 +43,7 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             title: 'Hot Module Replacement',
-            template: './index.html',
+            template: './src/index.html',
             inject: 'body'
         }),
         new webpack.HotModuleReplacementPlugin()
@@ -51,6 +51,6 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         publicPath: '/',
-        path: path.resolve(__dirname, '/dist/'),
+        path: path.resolve(__dirname, '/dist/')
     }
 };

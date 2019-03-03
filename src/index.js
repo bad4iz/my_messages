@@ -1,2 +1,2 @@
-console.log('josdfsdfaspa');
+console.log('jaspa');
 module.hot.accept();
