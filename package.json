@@ -18,7 +18,9 @@
     "url": "https://github.com/bad4iz/my_messages/issues"
   },
   "homepage": "https://github.com/bad4iz/my_messages#readme",
-  "dependencies": {},
+  "dependencies": {
+    "simple-peer": "^9.2.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
